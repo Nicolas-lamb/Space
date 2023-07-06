@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0,  0.7);
+    color: #eee;
+    border-radius: 5px;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #000;
+}
+
+.headline {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+#navbar {
+    width: 100%;
+    background: #111;
+    color: #eee;
+    height: 80px;
+    position: fixed;
+}
+
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#navbar-items li {
+    padding: 10px;
+}
+#imagem-menu {
+  width: 100px;
+  height: 100px;
+}
+@media  screen and (max-width: 560px){
+  #navbar{
+   height: 80px;     
+}
+}
+
+/* home */
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('/img/espaço1.webp') no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+}
+
+#home-container {
+    text-align: center;
+}
+
+#home-container h2 {
+    font-size: 2.5rem;
+}
+
+#home-container p {
+    font-size: 1.2rem;
+    padding: 7px 0;
+}
+
+/* Planetarios */
+#planetarios {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+#planetarios-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.planetario-image {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+/* astrofisicos */
+.astrofisico {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#astrofisicos {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#astrofisicos-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.astrofisico .astrofisico-image {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+    
+}
+
+/* planetas */
+#planetas {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+#planetas-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.planeta-image {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+/* Footer */
+#footer {
+    background: #222;
+    color: #eee;
+    padding: 30px;
+    text-align: center;
+}
+
+/* .................................................................. */
+
+/* Aba Astrofisicos */
+
+.astrofisico2 {
+    
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#astrofisicos2 {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+p{
+  font-size: 15px;
+}
+
+#astrofisicos-container2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.astrofisico-image2 {
+    margin-left: 45%;
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.headline2 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    margin-top: 200px;
+}
+
+/* .................................................................. */
+
+/* Aba Planetarios */
+
+.planetario2 {
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#planetarios2 {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#planetarios-container2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.planetario2 .planetario-image2 {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+
+/* .................................................................. */
+
+/* Aba Planetas */
+
+
+.planeta2 {
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#planetas2 {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#planetas-container2 {
+    width: 80%;
+    margin: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.planeta2-image {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+}
+@media screen and (max-width: 768px){
+    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0,  0.7);
+    color: #eee;
+    border-radius: 5px;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #000;
+}
+
+.headline {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+#navbar {
+    width: 100%;
+    background: #111;
+    color: #eee;
+    height: 80px;
+    position: fixed;
+}
+
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#navbar-items li {
+    padding: 10px;
+}
+#imagem-menu {
+  width: 100px;
+  height: 100px;
+}
+@media  screen and (max-width: 560px){
+  #navbar{
+   height: 80px;     
+}
+}
+
+/* home */
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('/img/espaço1.webp') no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+}
+
+#home-container {
+    text-align: center;
+}
+
+#home-container h2 {
+    font-size: 2.5rem;
+}
+
+#home-container p {
+    font-size: 1.2rem;
+    padding: 7px 0;
+}
+
+/* Planetarios */
+#planetarios {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+#planetarios-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.planetario-image {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+/* astrofisicos */
+.astrofisico {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#astrofisicos {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#astrofisicos-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.astrofisico .astrofisico-image {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+    
+}
+
+/* planetas */
+#planetas {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+}
+
+#planetas-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.planeta-image {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+/* Footer */
+#footer {
+    background: #222;
+    color: #eee;
+    padding: 30px;
+    text-align: center;
+}
+
+/* .................................................................. */
+
+/* Aba Astrofisicos */
+
+.astrofisico2 {
+    
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#astrofisicos2 {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+p{
+  font-size: 15px;
+}
+
+#astrofisicos-container2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.astrofisico-image2 {
+    margin-left: 45%;
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.headline2 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    margin-top: 200px;
+}
+
+/* .................................................................. */
+
+/* Aba Planetarios */
+
+.planetario2 {
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#planetarios2 {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#planetarios-container2 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.planetario2 .planetario-image2 {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+
+/* .................................................................. */
+
+/* Aba Planetas */
+
+
+.planeta2 {
+    align-items: center;
+    font-size: 1.2rem;
+    background: #333;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+#planetas2 {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#planetas-container2 {
+    width: 80%;
+    margin: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.planeta2-image {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+}
+}
